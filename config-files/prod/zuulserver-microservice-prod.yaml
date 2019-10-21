@@ -3,6 +3,10 @@ logging:
      org:
        springframework.web: DEBUG
 
+management:
+  security:
+    enabled: false
+    
 server:
   port: 8111
 
