@@ -1,23 +1,18 @@
-logging:
-   level:
-      org:
-         springframework.web: DEBUG
-
 server:
    port: 8111
 
 zuul:
    routes:
       employee:
-         path: /employee/**
-         url: http://emp.ccoms.com:8080
+         path: /**
+         url: http://emp.ccoms.com:8080/employee
          serviceId: employee-service
       department:
-         path: /department/**
-         url: http://dept.ccoms.com:8081
+         path: /**
+         url: http://dept.ccoms.com:8081/department
          serviceId: department-service
       organization:
-         path: /organization/**
-         url: http://org.ccoms.com:8082
+         path: /**
+         url: http://org.ccoms.com:8082/organization
          serviceId: organization-service
 
