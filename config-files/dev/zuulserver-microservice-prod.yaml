@@ -2,9 +2,10 @@ logging:
    level:
       org:
          springframework.web: DEBUG
-
+    
 server:
    port: 8111
+
 
 zuul:
    routes:
@@ -21,3 +22,10 @@ zuul:
          url: http://org.ccoms.com:8082/organization
          serviceId: organization-service
 
+proxy:
+   http:
+      host: www-proxy.us.oracle.com
+      port: '80'
+   https:
+      host: www-proxy.us.oracle.com
+      port: '80'

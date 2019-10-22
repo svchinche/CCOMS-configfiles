@@ -1,0 +1,33 @@
+spring:
+   jackson:
+      serialization:
+         INDENT_OUTPUT: true
+   data:
+      mongodb:
+         host: db.mongo.com
+         port: 27017
+         database: admin
+         username: admin
+         password: admin123
+server:
+  port: 8082
+
+logging:
+   level:
+      org:
+         springframework.web: DEBUG
+
+emp:
+   service:
+      url:  http://emp.ccoms.com:8080
+dept:
+   service:
+       url: http://dept.ccoms.com:8081
+
+proxy:
+   http:
+      host: www-proxy.us.oracle.com
+      port: '80'
+   https:
+      host: www-proxy.us.oracle.com
+      port: '80'
