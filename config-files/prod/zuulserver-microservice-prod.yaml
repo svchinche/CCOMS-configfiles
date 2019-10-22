@@ -10,14 +10,14 @@ zuul:
    routes:
       employee:
          path: /employee/**
-         url: http://emp.ccoms.com:8080/employee/
+         url: http://emp.ccoms.com:8080
          serviceId: employee-service
       department:
          path: /department/**
-         url: http://dept.ccoms.com:8081/department/
+         url: http://dept.ccoms.com:8081
          serviceId: department-service
       organization:
          path: /organization/**
-         url: http://org.ccoms.com:8082/organization
+         url: http://org.ccoms.com:8082
          serviceId: organization-service
 
