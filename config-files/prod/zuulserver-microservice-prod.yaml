@@ -4,15 +4,15 @@ server:
 zuul:
    routes:
       employee:
-         path: /**
+         path: /employee/**
          url: http://emp.ccoms.com:8080/employee
          serviceId: employee-service
       department:
-         path: /**
+         path: /department/**
          url: http://dept.ccoms.com:8081/department
          serviceId: department-service
       organization:
-         path: /**
+         path: /organization/**
          url: http://org.ccoms.com:8082/organization
          serviceId: organization-service
 
