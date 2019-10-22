@@ -1,7 +1,7 @@
-logging:
-   level:
-      org:
-         springframework.web: DEBUG
+spring:
+   jackson:
+      serialization:
+         INDENT_OUTPUT: true
 
 server:
    port: 8111
