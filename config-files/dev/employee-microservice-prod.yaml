@@ -11,16 +11,3 @@ spring:
          password: admin123
 server:
    port: 8080
-
-logging:
-   level:
-      org:
-         springframework.web: DEBUG
-
-proxy:
-   http:
-      host: www-proxy.us.oracle.com
-      port: '80'
-   https:
-      host: www-proxy.us.oracle.com
-      port: '80'

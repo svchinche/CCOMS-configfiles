@@ -1,31 +1,18 @@
-logging:
-   level:
-      org:
-         springframework.web: DEBUG
-    
 server:
    port: 8111
-
 
 zuul:
    routes:
       employee:
          path: /employee/**
-         url: http://emp.ccoms.com:8080/employee/
+         url: http://emp.ccoms.com:8080/employee
          serviceId: employee-service
       department:
          path: /department/**
-         url: http://dept.ccoms.com:8081/department/
+         url: http://dept.ccoms.com:8081/department
          serviceId: department-service
       organization:
          path: /organization/**
          url: http://org.ccoms.com:8082/organization
          serviceId: organization-service
 
-proxy:
-   http:
-      host: www-proxy.us.oracle.com
-      port: '80'
-   https:
-      host: www-proxy.us.oracle.com
-      port: '80'
