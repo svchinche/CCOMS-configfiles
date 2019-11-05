@@ -1,18 +1,18 @@
 server:
-   port: 8111
+   port: ${CCOMS_ZUUL_PORT}
 
 zuul:
    routes:
       employee:
          path: /employee/**
-         url: http://emp.ccoms.com:8080/employee
+         url: http://emp.ccoms.com:${CCOMS_EMP_PORT}/employee
          serviceId: employee-service
       department:
          path: /department/**
-         url: http://dept.ccoms.com:8081/department
+         url: http://dept.ccoms.com:${CCOMS_DEPT_PORT}/department
          serviceId: department-service
       organization:
          path: /organization/**
-         url: http://org.ccoms.com:8082/organization
+         url: http://org.ccoms.com:${CCOMS_ORG_PORT}/organization
          serviceId: organization-service
 

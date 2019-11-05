@@ -5,17 +5,17 @@ spring:
    data:
       mongodb:
          host: db.mongo.com
-         port: 27017
-         database: admin
-         username: admin
-         password: admin123
+         port: ${DB_MONGO_PORT}
+         database: ${DB_MONGO_SERVICENAME}
+         username: ${CCOMS_DATABASE_USERNAME}
+         password: ${CCOMS_DATABASE_PASSWORD}
 server:
-  port: 8082
+  port: ${CCOMS_ORG_PORT}
 
 emp:
    service:
-      url:  http://emp.ccoms.com:8080
+      url:  http://emp.ccoms.com:${CCOMS_EMP_PORT}
 dept:
    service:
-       url: http://dept.ccoms.com:8081
+       url: http://dept.ccoms.com:${CCOMS_DEPT_PORT}
 
