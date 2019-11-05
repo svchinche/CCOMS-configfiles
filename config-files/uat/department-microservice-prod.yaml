@@ -6,7 +6,7 @@ spring:
       mongodb:
          host: db.mongo.com
          port: ${DB_MONGO_PORT}
-         database: ${CCOMS_DATABASE_USERNAME}
+         database: ${CCOMS_DATABASE_SERVICENAME}
          username: ${CCOMS_DATABASE_USERNAME}
          password: ${CCOMS_DATABASE_PASSWORD}
 server:
