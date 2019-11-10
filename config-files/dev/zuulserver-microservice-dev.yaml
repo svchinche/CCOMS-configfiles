@@ -2,11 +2,11 @@ server:
    port: ${CCOMS_ZUUL_PORT}
 
 zuul:
-   prefix: /
+   prefix: /employee
    stripPrefix: true
    routes:
       employee:
-         path: /employee/**
+         path: /**
          url: http://emp.ccoms.com:${CCOMS_EMP_PORT}/employee
          stripPrefix: true
 
