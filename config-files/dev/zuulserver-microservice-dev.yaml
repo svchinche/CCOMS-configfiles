@@ -2,6 +2,7 @@ server:
    port: ${CCOMS_ZUUL_PORT}
 
 zuul:
+   prefix: /
    stripPrefix: true
    routes:
       employee:
