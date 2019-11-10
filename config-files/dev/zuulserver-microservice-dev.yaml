@@ -6,16 +6,13 @@ zuul:
       employee:
          path: /employee/**
          url: http://emp.ccoms.com:${CCOMS_EMP_PORT}/employee
-         serviceId: employee-service
          stripPrefix: true
       department:
          path: /department/**
          url: http://dept.ccoms.com:${CCOMS_DEPT_PORT}/department
-         serviceId: department-service
          stripPrefix: true
       organization:
          path: /organization/**
          url: http://org.ccoms.com:${CCOMS_ORG_PORT}/organization
-         serviceId: organization-service
          stripPrefix: true
 
