@@ -8,12 +8,5 @@ zuul:
          path: /employee/**
          url: http://emp.ccoms.com:${CCOMS_EMP_PORT}/employee
          stripPrefix: true
-      department:
-         path: /department/**
-         url: http://dept.ccoms.com:${CCOMS_DEPT_PORT}/department
-         stripPrefix: true
-      organization:
-         path: /organization/**
-         url: http://org.ccoms.com:${CCOMS_ORG_PORT}/organization
-         stripPrefix: true
+
 
