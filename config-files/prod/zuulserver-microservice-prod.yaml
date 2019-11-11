@@ -4,15 +4,15 @@ server:
 zuul:
    routes:
       employee:
-         path: /employee/**
+         path: /emp/**
          url: http://emp.ccoms.com:${CCOMS_EMP_PORT}/
          serviceId: employee-service
       department:
-         path: /department/**
+         path: /dept/**
          url: http://dept.ccoms.com:${CCOMS_DEPT_PORT}/
          serviceId: department-service
       organization:
-         path: /organization/**
+         path: /org/**
          url: http://org.ccoms.com:${CCOMS_ORG_PORT}/
          serviceId: organization-service
 
