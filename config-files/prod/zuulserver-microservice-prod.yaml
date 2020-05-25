@@ -1,0 +1,18 @@
+server:
+   port: ${CCOMS_ZUUL_PORT}
+
+zuul:
+   routes:
+      employee:
+         path: /emp/**
+         url: http://${EMP_HOST}:${CCOMS_EMP_PORT}/
+         serviceId: employee-service
+      department:
+         path: /dept/**
+         url: http://${DEPT_HOST}:${CCOMS_DEPT_PORT}/
+         serviceId: department-service
+      organization:
+         path: /org/**
+         url: http://${ORG_HOST}:${CCOMS_ORG_PORT}/
+         serviceId: organization-service
+

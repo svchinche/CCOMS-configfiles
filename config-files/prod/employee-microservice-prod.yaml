@@ -1,0 +1,13 @@
+spring:
+   jackson:
+      serialization:
+         INDENT_OUTPUT: true
+   data:
+      mongodb:
+         host: ${MONGO_HOST}
+         port: ${CCOMS_DATABASE_PORT}
+         database: ${CCOMS_DATABASE_SERVICENAME}
+         username: ${CCOMS_DATABASE_USERNAME}
+         password: ${CCOMS_DATABASE_PASSWORD}
+server:
+   port: ${CCOMS_EMP_PORT}
