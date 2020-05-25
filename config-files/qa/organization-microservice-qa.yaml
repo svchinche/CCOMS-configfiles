@@ -4,7 +4,7 @@ spring:
          INDENT_OUTPUT: true
    data:
       mongodb:
-         host: db.mongo.com
+         host: ${MONGO_HOST}
          port: ${CCOMS_DATABASE_PORT}
          database: ${CCOMS_DATABASE_SERVICENAME}
          username: ${CCOMS_DATABASE_USERNAME}
@@ -14,8 +14,8 @@ server:
 
 emp:
    service:
-      url:  http://emp.ccoms.com:${CCOMS_EMP_PORT}
+      url:  http://${EMP_HOST}:${CCOMS_EMP_PORT}
 dept:
    service:
-       url: http://dept.ccoms.com:${CCOMS_DEPT_PORT}
+       url: http://${DEPT_HOST}:${CCOMS_DEPT_PORT}
 
